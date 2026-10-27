@@ -158,11 +158,11 @@ export default function Home() {
         className={`fixed top-0 w-full z-50 transition-all duration-500 ${
           isScrolled
             ? "bg-[#000510]/90 backdrop-blur-xl border-b border-blue-500/40 shadow-lg shadow-blue-500/10"
-            : "bg-transparent"
+            : "bg-[#000510]/60 backdrop-blur-lg"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-14 sm:h-16">
             <a
               href="#home"
               className="text-lg font-bold tracking-wider bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent"
@@ -194,21 +194,21 @@ export default function Home() {
 
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+        className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden pt-20 sm:pt-24"
       >
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute top-1/4 left-1/4 w-72 h-72 md:w-96 md:h-96 bg-blue-600/15 rounded-full blur-3xl animate-float"></div>
           <div
-            className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-600/15 rounded-full blur-3xl animate-float"
+            className="absolute bottom-1/4 right-1/4 w-72 h-72 md:w-96 md:h-96 bg-cyan-600/15 rounded-full blur-3xl animate-float"
             style={{ animationDelay: "2s" }}
           ></div>
           <div
-            className="absolute top-1/2 left-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-float"
+            className="absolute top-1/2 left-1/2 w-72 h-72 md:w-96 md:h-96 bg-blue-500/10 rounded-full blur-3xl animate-float"
             style={{ animationDelay: "4s" }}
           ></div>
         </div>
 
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10 fade-in-up">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10 fade-in-up">
           <div className="text-center lg:text-left">
             <div className="mb-6">
               <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/20 to-cyan-600/20 border border-blue-500/40 text-cyan-300 text-sm font-medium mb-6">
@@ -242,25 +242,24 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="relative flex justify-center lg:justify-end">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl blur-2xl opacity-20"></div>
-            <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-br from-blue-500/60 via-cyan-400/40 to-transparent rounded-[2rem] blur-xl"></div>
-              <div className="relative w-72 h-[28rem] sm:w-80 sm:h-[30rem] lg:w-96 lg:h-[34rem]">
-                <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-blue-500/20 to-cyan-500/10"></div>
-                <div className="relative h-full w-full rounded-[2rem] overflow-hidden border border-blue-400/40 shadow-2xl shadow-blue-500/20">
+          <div className="relative flex justify-center lg:justify-end mt-8 lg:mt-0">
+            <div className="relative group">
+              <div className="absolute -inset-0.5 bg-gradient-to-br from-blue-500 via-cyan-400 to-blue-600 rounded-[1.75rem] opacity-60 blur-sm group-hover:opacity-90 group-hover:blur transition-all duration-500"></div>
+              <div className="relative w-[280px] h-[380px] sm:w-[320px] sm:h-[420px] lg:w-[340px] lg:h-[440px]">
+                <div className="relative h-full w-full rounded-[1.75rem] overflow-hidden border border-blue-400/50 bg-[#000510] shadow-xl shadow-blue-500/15 group-hover:shadow-2xl group-hover:shadow-blue-500/30 transition-all duration-500">
                   <Image
                     src="/0271a31b-77e3-4a6e-91e6-fa8a4ebf2458.png"
                     alt="Pervaz Mosaraf - SQA Engineer"
                     fill
-                    className="object-cover object-[50%_20%] scale-105"
+                    className="object-cover object-[50%_18%] scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
                     priority
                   />
-                  <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#000510] via-[#000510]/60 to-transparent"></div>
+                  <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[#000510] to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/10 via-transparent to-cyan-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-gradient-to-br from-blue-500/30 to-cyan-500/30 blur-2xl"></div>
-                <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 blur-2xl"></div>
               </div>
+              <div className="absolute -bottom-4 -right-4 w-20 h-20 rounded-full bg-gradient-to-br from-blue-500/25 to-cyan-500/25 blur-xl"></div>
+              <div className="absolute -top-4 -left-4 w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500/15 to-blue-500/15 blur-xl"></div>
             </div>
           </div>
         </div>
