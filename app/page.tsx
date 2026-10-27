@@ -245,15 +245,21 @@ export default function Home() {
           <div className="relative flex justify-center lg:justify-end">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl blur-2xl opacity-20"></div>
             <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 rounded-2xl blur-sm opacity-75"></div>
-              <div className="relative w-72 h-96 sm:w-80 sm:h-[420px] rounded-2xl overflow-hidden border border-blue-500/50">
-                <Image
-                  src="/image.png"
-                  alt="Pervaz Mosaraf"
-                  fill
-                  className="object-cover object-top"
-                  priority
-                />
+              <div className="absolute -inset-1 bg-gradient-to-br from-blue-500/60 via-cyan-400/40 to-transparent rounded-[2rem] blur-xl"></div>
+              <div className="relative w-72 h-[28rem] sm:w-80 sm:h-[30rem] lg:w-96 lg:h-[34rem]">
+                <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-blue-500/20 to-cyan-500/10"></div>
+                <div className="relative h-full w-full rounded-[2rem] overflow-hidden border border-blue-400/40 shadow-2xl shadow-blue-500/20">
+                  <Image
+                    src="/0271a31b-77e3-4a6e-91e6-fa8a4ebf2458.png"
+                    alt="Pervaz Mosaraf - SQA Engineer"
+                    fill
+                    className="object-cover object-[50%_20%] scale-105"
+                    priority
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#000510] via-[#000510]/60 to-transparent"></div>
+                </div>
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-gradient-to-br from-blue-500/30 to-cyan-500/30 blur-2xl"></div>
+                <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 blur-2xl"></div>
               </div>
             </div>
           </div>
